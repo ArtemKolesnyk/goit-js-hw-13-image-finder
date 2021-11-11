@@ -32,10 +32,21 @@ function onSearch(e) {
 
   clearHitsContainer();
   pixabayApiService.resetPage();
-  pixabayApiService.fetchPhotos().then(appendImgMarkup);
+  pixabayApiService.fetchPhotos()
+  .then(appendImgMarkup)
+  .cetch(error ({
+    text: 'oops! Не найдено картинки с таким именем!',
+    delay: 250,
+  }));
 }
+
 function onLoadMore() {
-  pixabayApiService.fetchPhotos().then(appendImgMarkup);
+  pixabayApiService.fetchPhotos()
+  .then(appendImgMarkup)
+  .cetch(error ({
+    text: 'oops! Что-то пошло не так!',
+    delay: 250,
+  })); 
 }
 
 function appendImgMarkup(image) {
