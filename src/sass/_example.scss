@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  line-height: 1.1;
+  color: #a3a23e;
+  background-color: aquamarine;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+.btn {
+  background-color: rgb(44, 119, 29);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border: solid rgb(23, 100, 34);
+  border-radius: 45px;
+}
+.btn:hover {
+  background-color: rgb(38, 153, 99);
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(23, 100, 34);
+  color: #fff;
+  border: solid rgb(23, 100, 34);
+  border-radius: 45px;
+}
+.button:hover {
+  background-color: rgb(150, 197, 63);
+  cursor: pointer;
+}  
+  
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery li {
+  height: 330px;
+  overflow: hidden;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.photo-card img:hover {
+  transform: scale(1.05);
+}
+.stats {
+  display: flex;
+}
+
+.stats-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.stats-item {
+  text-align: center;
+}
+input {
+  font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 45px;
+    border: solid rgb(23, 100, 34);
+}
+input:focus {
+  width: 260px;
+}
+

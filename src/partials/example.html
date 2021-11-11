@@ -1,12 +1,12 @@
 <form class="search-form" id="search-form">
-  <input
-    type="text"
-    name="query"
-    autocomplete="off"
-    placeholder="Search images..."
-  />
-  <button type="submit" class="btn">Поиск</button>
+  <label for="searchQuery"></label>
+  <input type="text" name="query" autocomplete="off" placeholder="Поиск изображений"/>
+<button type="submit" class="btn">Поиск</button>
+  
 </form>
 <ul class="gallery">
-  
+  <!-- Список <li> с карточками изображений -->
 </ul>
+<button type="button" class="button" data-action="load-more">
+  <span class="label">Показать больше</span>
+</button>
